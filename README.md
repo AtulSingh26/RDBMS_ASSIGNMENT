@@ -46,8 +46,12 @@ Write a query to fetch EMP_ID, FIRST_NAME, LAST_NAME, GENDER, and DEPARTMENT fro
 SELECT EMP_ID,FIRST_NAME,LAST_NAME,GENDER,DEPT AS DEPARTMENT
 FROM emp_record_table
 ```
-
 OUTPUT - 
+<img width="353" alt="Screenshot 2023-02-23 at 7 02 05 PM" src="https://user-images.githubusercontent.com/122472996/220921301-8d2ebf74-5daf-44db-aa61-7dba18602ad0.png">
+
+
+
+
 
 ## QUESTION 4
 Write a query to fetch EMP_ID, FIRST_NAME, LAST_NAME, GENDER, DEPARTMENT, and EMP_RATING if the EMP_RATING is:
@@ -60,6 +64,9 @@ WHERE EMP_RATING < 2  -- This condition it will Fetch where emp_rating is less t
 ```
 OUTPUT - 
 
+<img width="624" alt="Screenshot 2023-02-23 at 7 05 37 PM" src="https://user-images.githubusercontent.com/122472996/220922167-e6cf69ab-0b4e-4c43-8e8b-eecb32a9bd15.png">
+
+
 > Greater than 4
 ```
 SELECT EMP_ID,FIRST_NAME,LAST_NAME,GENDER,DEPT AS DEPARTMENT,EMP_RATING
@@ -67,6 +74,7 @@ FROM emp_record_table
 WHERE EMP_RATING > 4 -- This condition will fetch only those rows where emp_rating is greater than 4
 ```
 Output  - 
+<img width="624" alt="Screenshot 2023-02-23 at 7 06 16 PM" src="https://user-images.githubusercontent.com/122472996/220922413-373e5c8c-ea7a-46b0-991b-30916bef42f2.png">
 
 
 
@@ -79,6 +87,7 @@ WHERE EMP_RATING BETWEEN 2 AND 4  -- This will Fetch where only those where emp_
 ```
 
 OUTPUT -
+<img width="437" alt="Screenshot 2023-02-23 at 3 50 32 PM" src="https://user-images.githubusercontent.com/122472996/220922508-bd34eb45-c2c3-4f14-9e3d-6b6d8ae53ce5.png">
 
 
 
@@ -91,6 +100,7 @@ WHERE DEPT = 'FINANCE'
 ```
 
 OUTPUT -
+<img width="186" alt="Screenshot 2023-02-23 at 4 02 52 PM" src="https://user-images.githubusercontent.com/122472996/220922566-870aea65-6c50-4ca5-845b-6492e67a1cc2.png">
 
 
 ## QUESTION 6 
@@ -108,6 +118,8 @@ GROUP BY  mgr.EMP_ID ;
 
 
 OUTPUT -
+<img width="447" alt="Screenshot 2023-02-23 at 4 08 22 PM" src="https://user-images.githubusercontent.com/122472996/220922612-eff4a88c-7c71-4d13-9905-fee434a20a9e.png">
+
 
 
 
@@ -127,6 +139,8 @@ WHERE DEPT = 'Finance'
 ```
 
 OUTPUT -
+<img width="442" alt="Screenshot 2023-02-23 at 4 11 59 PM" src="https://user-images.githubusercontent.com/122472996/220922678-35080581-a2f6-4248-a0fa-688974612d3b.png">
+
 
 
  ## QUESTION 8
@@ -137,7 +151,10 @@ FROM emp_record_table
 
 ```
 
-OUTPUT  -
+OUTPUT  - 
+<img width="662" alt="Screenshot 2023-02-23 at 4 16 06 PM" src="https://user-images.githubusercontent.com/122472996/220922816-e4b3129f-42a6-462c-bc7c-81d20658fb58.png">
+
+
 
 
  ## QUESTION 9 
@@ -146,6 +163,8 @@ Write a query to calculate the minimum and the maximum salary of the employees i
 SELECT distinct Role ,  MIN(SALARY) OVER(PARTITION BY ROLE) AS 'Minimum Salary'  , MAX(SALARY) OVER(PARTITION BY ROLE) AS 'Maximum Salary'
 FROM EMP_RECORD_TABLE 
 ```
+
+OUTPUT- <img width="370" alt="Screenshot 2023-02-23 at 4 23 50 PM" src="https://user-images.githubusercontent.com/122472996/220922925-7ee2ae16-0daa-4953-8f41-5f64227e77db.png">
 
 
 
@@ -161,10 +180,10 @@ SELECT CONCAT(FIRST_NAME,' ',LAST_NAME) AS NAME ,ROLE, EXP AS 'Experience', DENS
 from emp_record_table
 ```
 
+OUTPUT-
 
 
-
-
+![Uploading Screenshot 2023-02-23 at 4.32.12 PM.png…]()
 
 
 
