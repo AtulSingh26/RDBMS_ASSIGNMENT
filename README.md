@@ -29,6 +29,8 @@ Create a database named employee, then import data_science_team.csv proj_table.c
 ## QUESTION 2
 Create an ER diagram for the given employee database.
 
+<img width="949" alt="220896998-e3f3e93b-0d6e-4901-9ba6-e9c32c17084b" src="https://user-images.githubusercontent.com/122472996/220919935-2326fe12-e41b-4827-bbaf-3b84f19f95b9.png">
+
 
 
 
